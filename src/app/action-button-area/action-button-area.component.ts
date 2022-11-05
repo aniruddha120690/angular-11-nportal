@@ -1,6 +1,7 @@
 import { TemplatePortal } from '@angular/cdk/portal';
 import { Component, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
-import { Observable, takeWhile } from 'rxjs';
+import { Observable } from 'rxjs';
+import { takeWhile } from 'rxjs/operators';
 import { AppPortal, PortalService } from '../services/portal.service';
 
 @Component({

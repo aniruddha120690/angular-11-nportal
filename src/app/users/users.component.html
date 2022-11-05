@@ -1,0 +1,18 @@
+<p>users works!</p>
+<div class="flex gap-1 mb-2">
+  <button
+    class="bg-orange-200 p-1 px-2 rounded"
+    (click)="changeComponent('red')"
+  >
+    Red Component
+  </button>
+  <button
+    class="bg-green-200 p-1 px-2 rounded"
+    (click)="changeComponent('green')"
+  >
+    Green Component
+  </button>
+</div>
+<ng-container *cdkPortal>
+  <action-button></action-button>
+</ng-container>
